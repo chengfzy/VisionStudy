@@ -6,3 +6,5 @@ Some Study Code about Vision
 1. Eg01_ChessboardDetection \
     Some code extracted from OpenCV library calib modules. Not finished.
     Ref: https://github.com/opencv/opencv/blob/master/modules/calib3d/src/calibinit.cpp
+1. Eg02_QrCodeDecode    \
+    Detect and decode QR Code using ZBar
