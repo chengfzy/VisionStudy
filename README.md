@@ -10,3 +10,5 @@ Some Study Code about Vision
     Detect and decode QR Code using ZBar
 1. Eg03_AprilTagDetection   \
     Detect AprilTag
+1. Eg04_VisualDebugging \
+    Some useful visual debugging using OpenCV
