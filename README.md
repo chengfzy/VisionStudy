@@ -8,3 +8,5 @@ Some Study Code about Vision
     Ref: https://github.com/opencv/opencv/blob/master/modules/calib3d/src/calibinit.cpp
 1. Eg02_QrCodeDecode    \
     Detect and decode QR Code using ZBar
+1. Eg03_AprilTagDetection   \
+    Detect AprilTag

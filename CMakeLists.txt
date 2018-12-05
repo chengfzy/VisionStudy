@@ -22,7 +22,7 @@ include_directories(
         ${Boost_INCLUDE_DIRS}
         ${OpenCV_INCLUDE_DIRS}
         ${ZBAR_INCLUDE_DIRS})
-set(THIRD_LIBS ${THIRD_LIBS}
+set(EXTERNAL_LIBS ${EXTERNAL_LIBS}
         ${GFLAGS_LIBRARIES}
         ${GLOG_LIBRARIES}
         ${Boost_LIBRARIES}
@@ -51,7 +51,15 @@ set(CMAKE_POSITION_INDEPENDENT_CODE ON)
 ###############################################################################
 # include folder
 include_directories(.)
+include_directories(./3rdparty/apriltag/include)
+
+# internal 3rd party libraries
+set(INTERNAL_LIB_APRILTAG apriltag)
+set(INTERNAL_LIBS ${INTERAL_LIBS}
+        ${INTERNAL_LIB_APRILTAG})
+add_subdirectory(./3rdparty)
 
 # add Folder
 add_subdirectory(Eg01_ChessboardDetection)
 add_subdirectory(Eg02_QrCodeDecode)
+add_subdirectory(Eg03_AprilTagDetection)
